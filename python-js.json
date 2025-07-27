@@ -2,7 +2,7 @@
 	"name": "python-js",
 	//"image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm",
 	"build": {
-		"dockerfile": "Dockerfile",
+		"dockerfile": "../Dockerfile",
 		"context": ".."
 	},
 
@@ -33,6 +33,7 @@
         }
     },
 
+	// Make sure to update the user if you change the user in the Dockerfile.
 	"mounts": [
     	"source=${env:HOME}${env:USERPROFILE}/.config,target=/home/vscode/.config,type=bind"
   	]
