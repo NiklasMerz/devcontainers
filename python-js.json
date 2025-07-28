@@ -21,6 +21,7 @@
 	"forwardPorts": [8000, 8080, 5173],
 
 	// install requirements on container creation
+	"postCreateCommand": "pip install -r requirements_dev.txt",
 
 
 	// 👇 Configure tool-specific properties.
